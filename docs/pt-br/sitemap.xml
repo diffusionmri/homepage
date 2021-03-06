@@ -3,6 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://diffusionmri.github.io/homepage/pt-br/authors/</loc>
+    <lastmod>2018-12-31T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -14,7 +15,21 @@
                 href="https://diffusionmri.github.io/homepage/pt-br/authors/"
                 />
   </url><url>
+    <loc>https://diffusionmri.github.io/homepage/pt-br/categories/blog/</loc>
+    <lastmod>2018-12-31T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://diffusionmri.github.io/homepage/categories/blog/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt-br"
+                href="https://diffusionmri.github.io/homepage/pt-br/categories/blog/"
+                />
+  </url><url>
     <loc>https://diffusionmri.github.io/homepage/pt-br/categories/</loc>
+    <lastmod>2018-12-31T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -26,7 +41,56 @@
                 href="https://diffusionmri.github.io/homepage/pt-br/categories/"
                 />
   </url><url>
+    <loc>https://diffusionmri.github.io/homepage/pt-br/posts/dummy/</loc>
+    <lastmod>2018-12-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://diffusionmri.github.io/homepage/pt-br/tags/hugo/</loc>
+    <lastmod>2018-12-31T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://diffusionmri.github.io/homepage/tags/hugo/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt-br"
+                href="https://diffusionmri.github.io/homepage/pt-br/tags/hugo/"
+                />
+  </url><url>
+    <loc>https://diffusionmri.github.io/homepage/pt-br/tags/i18n/</loc>
+    <lastmod>2018-12-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://diffusionmri.github.io/homepage/pt-br/posts/</loc>
+    <lastmod>2018-12-31T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://diffusionmri.github.io/homepage/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt-br"
+                href="https://diffusionmri.github.io/homepage/pt-br/posts/"
+                />
+  </url><url>
+    <loc>https://diffusionmri.github.io/homepage/pt-br/tags/</loc>
+    <lastmod>2018-12-31T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://diffusionmri.github.io/homepage/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt-br"
+                href="https://diffusionmri.github.io/homepage/pt-br/tags/"
+                />
+  </url><url>
+    <loc>https://diffusionmri.github.io/homepage/pt-br/authors/translation-test/</loc>
+    <lastmod>2018-12-31T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://diffusionmri.github.io/homepage/pt-br/</loc>
+    <lastmod>2018-12-31T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -36,6 +100,30 @@
                 rel="alternate"
                 hreflang="pt-br"
                 href="https://diffusionmri.github.io/homepage/pt-br/"
+                />
+  </url><url>
+    <loc>https://diffusionmri.github.io/homepage/pt-br/contact/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://diffusionmri.github.io/homepage/contact/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt-br"
+                href="https://diffusionmri.github.io/homepage/pt-br/contact/"
+                />
+  </url><url>
+    <loc>https://diffusionmri.github.io/homepage/pt-br/projects/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://diffusionmri.github.io/homepage/projects/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt-br"
+                href="https://diffusionmri.github.io/homepage/pt-br/projects/"
                 />
   </url><url>
     <loc>https://diffusionmri.github.io/homepage/pt-br/series/</loc>
@@ -50,16 +138,16 @@
                 href="https://diffusionmri.github.io/homepage/pt-br/series/"
                 />
   </url><url>
-    <loc>https://diffusionmri.github.io/homepage/pt-br/tags/</loc>
+    <loc>https://diffusionmri.github.io/homepage/pt-br/about/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://diffusionmri.github.io/homepage/tags/"
+                href="https://diffusionmri.github.io/homepage/about/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
-                href="https://diffusionmri.github.io/homepage/pt-br/tags/"
+                href="https://diffusionmri.github.io/homepage/pt-br/about/"
                 />
   </url>
 </urlset>

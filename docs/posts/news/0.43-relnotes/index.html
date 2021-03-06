@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="color-scheme" content="light dark">
+    
+    
+      <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests; block-all-mixed-content; default-src 'self'; child-src 'self'; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net/; form-action 'self'; frame-src 'self'; img-src 'self'; object-src 'none'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://cdn.jsdelivr.net/; script-src 'self' 'unsafe-inline' https://www.google-analytics.com; prefetch-src 'self';">
+    
+
+    <meta name="author" content="Ye Wu Ph.D">
+    <meta name="description" content="Hugo 0.43 adds a powerful and simple to use assets pipeline with SASS/SCSS and much, much more …">
+    <meta name="keywords" content="science,blog,research,personal">
+
+    <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://diffusionmri.github.io/homepage/posts/news/0.43-relnotes/featured-hugo-43-poster.png"/>
+<meta name="twitter:title" content="And Now: Hugo Pipes!"/>
+<meta name="twitter:description" content="Hugo 0.43 adds a powerful and simple to use assets pipeline with SASS/SCSS and much, much more …"/>
+
+    <meta property="og:title" content="And Now: Hugo Pipes!" />
+<meta property="og:description" content="Hugo 0.43 adds a powerful and simple to use assets pipeline with SASS/SCSS and much, much more …" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://diffusionmri.github.io/homepage/posts/news/0.43-relnotes/" /><meta property="og:image" content="https://diffusionmri.github.io/homepage/posts/news/0.43-relnotes/featured-hugo-43-poster.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2018-07-09T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2018-07-09T00:00:00&#43;00:00" />
+
+
+
+    <title>
+  And Now: Hugo Pipes! · Ye Wu
+</title>
+
+    
+      <link rel="canonical" href="https://diffusionmri.github.io/homepage/posts/news/0.43-relnotes/">
+    
+
+    
+    
+    <link rel="preload" href="/homepage/fonts/forkawesome-webfont.woff2?v=1.1.7" as="font" type="font/woff2" integrity="sha256-hEIt6X6xzye8ubyk8/uxjz68cRZHsJxoKS9fQ8idUGQ=" crossorigin>
+
+    
+      
+      
+      <link rel="stylesheet" href="/homepage/css/coder.min.abe8b6775d85a01169c10329309df501aa8a008ab354002f7858f077cae76020.css" integrity="sha256-q&#43;i2d12FoBFpwQMpMJ31AaqKAIqzVAAveFjwd8rnYCA=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+      
+        
+        
+        <link rel="stylesheet" href="/homepage/css/coder-dark.min.89c82b6022b96f77aeb521b240daec4f87ea029d84d1c78b8acd0735b91b3c92.css" integrity="sha256-icgrYCK5b3eutSGyQNrsT4fqAp2E0ceLis0HNbkbPJI=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="/homepage/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/homepage/images/favicon-16x16.png" sizes="16x16">
+
+    <link rel="apple-touch-icon" href="/homepage/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/homepage/images/apple-touch-icon.png">
+
+    
+      <script defer src="https://twemoji.maxcdn.com/v/13.0.1/twemoji.min.js"
+        integrity="sha384-5f4X0lBluNY/Ib4VhGx0Pf6iDCF99VGXJIyYy7dDLY5QlEd7Ap0hICSSZA1XYbc4" crossorigin="anonymous"></script>
+    
+
+    <meta name="generator" content="Hugo 0.81.0" />
+  </head>
+
+  
+  
+    
+  
+  <body class="colorscheme-auto"
+        onload=" twemoji.parse(document.body); "
+  >
+    
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/homepage">
+      Ye Wu
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/homepage/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/homepage/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/homepage/projects/">Projects</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/homepage/contact/">Contact me</a>
+            </li>
+          
+        
+        
+          
+          
+          
+            
+          
+            
+              
+                <li class="navigation-item menu-separator">
+                  <span>|</span>
+                </li>
+                
+              
+              <li class="navigation-item">
+                <a href="https://diffusionmri.github.io/homepage/pt-br/">Chinese</a>
+              </li>
+            
+          
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://diffusionmri.github.io/homepage/posts/news/0.43-relnotes/">
+              And Now: Hugo Pipes!
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime='2018-07-09T00:00:00Z'>
+                July 9, 2018
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              4-minute read
+            </span>
+          </div>
+          
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="/homepage/categories/releases/">Releases</a></div>
+
+          
+        </div>
+      </header>
+
+      <div>
+        
+        <pre><code>Hugo `0.43` adds a powerful and very simple to use **Assets Pipeline** with **SASS and SCSS** with source map support, **PostCSS** and **minification** and **fingerprinting** and **Subresource Integrity** and ... much more. Oh, did we mention that you can now do **ad-hoc image processing** and execute text resources as Go templates?
+</code></pre>
+<p>An example pipeline:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go-html-template" data-lang="go-html-template"><span style="color:#0f0;font-weight:bold">{{</span> $styles := resources<span style="color:#007f7f">.Get</span> <span style="color:#0ff;font-weight:bold">&#34;scss/main.scss&#34;</span> | toCSS | postCSS | minify | fingerprint <span style="color:#0f0;font-weight:bold">}}</span>
+&lt;<span style="font-weight:bold">link</span> <span style="color:#007f7f">rel</span>=<span style="color:#0ff;font-weight:bold">&#34;stylesheet&#34;</span> <span style="color:#007f7f">href</span>=<span style="color:#0ff;font-weight:bold">&#34;</span><span style="color:#0f0;font-weight:bold">{{</span> $styles<span style="color:#007f7f">.Permalink</span> <span style="color:#0f0;font-weight:bold">}}</span><span style="color:#0ff;font-weight:bold">&#34;</span> <span style="color:#007f7f">integrity</span>=<span style="color:#0ff;font-weight:bold">&#34;</span><span style="color:#0f0;font-weight:bold">{{</span> $styles<span style="color:#007f7f">.Data.Integrity</span> <span style="color:#0f0;font-weight:bold">}}</span><span style="color:#0ff;font-weight:bold">&#34;</span> <span style="color:#007f7f">media</span>=<span style="color:#0ff;font-weight:bold">&#34;screen&#34;</span>&gt;
+</code></pre></div><p>To me, the above is beautiful in its speed and simplicity. It could be printed on a t-shirt. I wrote in the <a href="https://gohugo.io/news/lets-celebrate-hugos-5th-birthday/">Hugo Birthday Post</a> some days ago about the value of a single binary with native and fast implementations. I should have added <em>simplicity</em> as a keyword. There seem to be a misconception that all of this needs to be hard and painful.</p>
+<p>New functions to create <code>Resource</code> objects:</p>
+<ul>
+<li><code>resources.Get</code></li>
+<li><code>resources.FromString</code>: Create a Resource from a string.</li>
+</ul>
+<p>New <code>Resource</code> transformation funcs:</p>
+<ul>
+<li><code>resources.ToCSS</code>: Compile <code>SCSS</code> or <code>SASS</code> into <code>CSS</code>.</li>
+<li><code>resources.PostCSS</code>: Process your CSS with PostCSS. Config file support (project or theme or passed as an option).</li>
+<li><code>resources.Minify</code>: Currently supports <code>css</code>, <code>js</code>, <code>json</code>, <code>html</code>, <code>svg</code>, <code>xml</code>.</li>
+<li><code>resources.Fingerprint</code>: Creates a fingerprinted version of the given Resource with Subresource Integrity.</li>
+<li><code>resources.Concat</code>: Concatenates a list of Resource objects. Think of this as a poor man&rsquo;s bundler.</li>
+<li><code>resources.ExecuteAsTemplate</code>: Parses and executes the given Resource and data context (e.g. .Site) as a Go template.</li>
+</ul>
+<p>I, <a href="https://github.com/bep">@bep</a>, implemented this in <a href="https://github.com/gohugoio/hugo/commit/dea71670c059ab4d5a42bd22503f18c087dd22d4">dea71670</a>. We will work hard to get the documentation up to date, but follow the links above for details, and also see this <a href="https://github.com/bep/hugo-sass-test">demo project</a>.</p>
+<p>This release represents <strong>35 contributions by 7 contributors</strong> to the main Hugo code base.
+<a href="https://github.com/bep">@bep</a> leads the Hugo development with a significant amount of contributions, but also a big shoutout to <a href="https://github.com/anthonyfok">@anthonyfok</a>, <a href="https://github.com/openscript">@openscript</a>, and <a href="https://github.com/caarlos0">@caarlos0</a> for their ongoing contributions.
+And a big thanks to <a href="https://github.com/digitalcraftsman">@digitalcraftsman</a> for his relentless work on keeping the themes site in pristine condition and to <a href="https://github.com/kaushalmodi">@kaushalmodi</a> for his great work on the documentation site.</p>
+<p>Many have also been busy writing and fixing the documentation in <a href="https://github.com/gohugoio/hugoDocs">hugoDocs</a>,
+which has received <strong>11 contributions by 5 contributors</strong>. A special thanks to <a href="https://github.com/bep">@bep</a>, <a href="https://github.com/danrl">@danrl</a>, <a href="https://github.com/regisphilibert">@regisphilibert</a>, and <a href="https://github.com/digitalcraftsman">@digitalcraftsman</a> for their work on the documentation site.</p>
+<p>Hugo now has:</p>
+<ul>
+<li>26968+ <a href="https://github.com/gohugoio/hugo/stargazers">stars</a></li>
+<li>443+ <a href="https://github.com/gohugoio/hugo/graphs/contributors">contributors</a></li>
+<li>238+ <a href="http://themes.gohugo.io/">themes</a></li>
+</ul>
+<h2 id="notes">
+  Notes
+  <a class="heading-link" href="#notes">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<ul>
+<li>Replace deprecated {Get,}ByPrefix with {Get,}Match <a href="https://github.com/gohugoio/hugo/commit/42ed602580a672e420e1d860384e812f4871ff67">42ed6025</a> <a href="https://github.com/anthonyfok">@anthonyfok</a></li>
+<li>Hugo is now released with two binary version: One with and one without SCSS/SASS support. At the time of writing, this is only available in the binaries on the GitHub release page. Brew, Snap builds etc. will come. But note that you <strong>only need the extended version if you want to edit SCSS</strong>. For your CI server, or if you don&rsquo;t use SCSS, you will most likely want the non-extended version.</li>
+</ul>
+<h2 id="enhancements">
+  Enhancements
+  <a class="heading-link" href="#enhancements">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<h3 id="templates">
+  Templates
+  <a class="heading-link" href="#templates">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<ul>
+<li>Return en empty slice in <code>after</code> instead of error <a href="https://github.com/gohugoio/hugo/commit/f8212d20009c4b5cc6e1ec733d09531eb6525d9f">f8212d20</a> <a href="https://github.com/bep">@bep</a> <a href="https://github.com/gohugoio/hugo/issues/4894">#4894</a></li>
+<li>Update internal pagination template to support Bootstrap 4 <a href="https://github.com/gohugoio/hugo/commit/ca1e46efb94e3f3d2c8482cb9434d2f38ffd2683">ca1e46ef</a> <a href="https://github.com/bep">@bep</a> <a href="https://github.com/gohugoio/hugo/issues/4881">#4881</a></li>
+<li>Support text/template/parse API change in go1.11 <a href="https://github.com/gohugoio/hugo/commit/9f27091e1067875e2577c331acc60adaef5bb234">9f27091e</a> <a href="https://github.com/anthonyfok">@anthonyfok</a> <a href="https://github.com/gohugoio/hugo/issues/4784">#4784</a></li>
+</ul>
+<h3 id="core">
+  Core
+  <a class="heading-link" href="#core">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<ul>
+<li>Allow forward slash in shortcode names <a href="https://github.com/gohugoio/hugo/commit/de37455ec73cffd039b44e8f6c62d2884b1d6bbd">de37455e</a> <a href="https://github.com/bep">@bep</a> <a href="https://github.com/gohugoio/hugo/issues/4886">#4886</a></li>
+<li>Reset the global pages cache on server rebuilds <a href="https://github.com/gohugoio/hugo/commit/128f14efad90886ffef37c01ac1e20436a732f97">128f14ef</a> <a href="https://github.com/bep">@bep</a> <a href="https://github.com/gohugoio/hugo/issues/4845">#4845</a></li>
+</ul>
+<h3 id="other">
+  Other
+  <a class="heading-link" href="#other">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<ul>
+<li>Bump CircleCI image <a href="https://github.com/gohugoio/hugo/commit/e3df6478f09a7a5fed96aced791fa94fd2c35d1a">e3df6478</a> <a href="https://github.com/bep">@bep</a></li>
+<li>Add Goreleaser extended config <a href="https://github.com/gohugoio/hugo/commit/626afc98254421f5a5edc97c541b10bd81d5bbbb">626afc98</a> <a href="https://github.com/bep">@bep</a> <a href="https://github.com/gohugoio/hugo/issues/4908">#4908</a></li>
+<li>Build both hugo and hugo.extended for 0.43 <a href="https://github.com/gohugoio/hugo/commit/e1027c5846b48c4ad450f6cc27e2654c9e0dae39">e1027c58</a> <a href="https://github.com/anthonyfok">@anthonyfok</a> <a href="https://github.com/gohugoio/hugo/issues/4908">#4908</a></li>
+<li>Add temporary build script <a href="https://github.com/gohugoio/hugo/commit/bfc3488b8e8b3dc1ffc6a339ee2dac8dcbdb55a9">bfc3488b</a> <a href="https://github.com/bep">@bep</a></li>
+<li>Add &ldquo;extended&rdquo; to &ldquo;hugo version&rdquo; <a href="https://github.com/gohugoio/hugo/commit/ce84b524f4e94299b5b66afe7ce1a9bd4a9959fc">ce84b524</a> <a href="https://github.com/anthonyfok">@anthonyfok</a> <a href="https://github.com/gohugoio/hugo/issues/4913">#4913</a></li>
+<li>Add a newScratch template func <a href="https://github.com/gohugoio/hugo/commit/2b8d907ab731627f4e2a30442cd729064516c8bb">2b8d907a</a> <a href="https://github.com/bep">@bep</a> <a href="https://github.com/gohugoio/hugo/issues/4685">#4685</a></li>
+<li>Add Hugo Piper with SCSS support and much more <a href="https://github.com/gohugoio/hugo/commit/dea71670c059ab4d5a42bd22503f18c087dd22d4">dea71670</a> <a href="https://github.com/bep">@bep</a> <a href="https://github.com/gohugoio/hugo/issues/4381">#4381</a><a href="https://github.com/gohugoio/hugo/issues/4903">#4903</a><a href="https://github.com/gohugoio/hugo/issues/4858">#4858</a></li>
+<li>Consider root and current section&rsquo;s content type if set in front matter <a href="https://github.com/gohugoio/hugo/commit/c790029e1dbb0b66af18d05764bd6045deb2e180">c790029e</a> <a href="https://github.com/bep">@bep</a> <a href="https://github.com/gohugoio/hugo/issues/4891">#4891</a></li>
+<li>Update docker image <a href="https://github.com/gohugoio/hugo/commit/554553c09c7657d28681e1fa0638806a452737a0">554553c0</a> <a href="https://github.com/bep">@bep</a></li>
+<li>Merge branch &lsquo;release-0.42.2&rsquo; <a href="https://github.com/gohugoio/hugo/commit/282f6035e7c36f8550d91033e3a66718468c6c8b">282f6035</a> <a href="https://github.com/bep">@bep</a></li>
+<li>Release 0.42.2 <a href="https://github.com/gohugoio/hugo/commit/1637d12e3762fc1ebab4cd675f75afaf25f59cdb">1637d12e</a> <a href="https://github.com/bep">@bep</a></li>
+<li>Update GoReleaser config <a href="https://github.com/gohugoio/hugo/commit/1f0c4e1fb347bb233f3312c424fbf5a013c03604">1f0c4e1f</a> <a href="https://github.com/caarlos0">@caarlos0</a></li>
+<li>Create missing head.html partial on new theme generation <a href="https://github.com/gohugoio/hugo/commit/fd71fa89bd6c197402582c87b2b76d4b96d562bf">fd71fa89</a> <a href="https://github.com/openscript">@openscript</a></li>
+<li>Add html doctype to baseof.html template for new themes <a href="https://github.com/gohugoio/hugo/commit/b5a3aa7082135d0a573f4fbb00f798e26b67b902">b5a3aa70</a> <a href="https://github.com/openscript">@openscript</a></li>
+<li>Adds .gitattributes to force Go files to LF <a href="https://github.com/gohugoio/hugo/commit/6a2968fd5c0116d93de0f379ac615e9076821899">6a2968fd</a> <a href="https://github.com/neurocline">@neurocline</a></li>
+<li>Update to Go 1.9.7 and Go 1.10.3 <a href="https://github.com/gohugoio/hugo/commit/23d5fc82ee01d56440d0991c899acd31e9b63e27">23d5fc82</a> <a href="https://github.com/anthonyfok">@anthonyfok</a></li>
+<li>Update Dockerfile to a multi-stage build <a href="https://github.com/gohugoio/hugo/commit/8531ec7ca36fd35a57fba06bbb06a65c94dfd3ed">8531ec7c</a> <a href="https://github.com/skoblenick">@skoblenick</a> <a href="https://github.com/gohugoio/hugo/issues/4154">#4154</a></li>
+<li>Release 0.42.1 <a href="https://github.com/gohugoio/hugo/commit/d67e843c1212e1f53933556b5f946c8541188d9a">d67e843c</a> <a href="https://github.com/bep">@bep</a></li>
+<li>Do not fail server build when /static is missing <a href="https://github.com/gohugoio/hugo/commit/34ee27a78b9e2b5f475d44253ae234067b76cc6e">34ee27a7</a> <a href="https://github.com/bep">@bep</a> <a href="https://github.com/gohugoio/hugo/issues/4846">#4846</a></li>
+</ul>
+<h2 id="fixes">
+  Fixes
+  <a class="heading-link" href="#fixes">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<ul>
+<li>Do not create paginator pages for the other output formats <a href="https://github.com/gohugoio/hugo/commit/43338c3a99769eb7d0df0c12559b8b3d42b67dba">43338c3a</a> <a href="https://github.com/bep">@bep</a> <a href="https://github.com/gohugoio/hugo/issues/4890">#4890</a></li>
+<li>Fix the shortcodes/partials vs base template detection <a href="https://github.com/gohugoio/hugo/commit/a5d0a57e6bdab583134a68c035aac9b3007f006a">a5d0a57e</a> <a href="https://github.com/bep">@bep</a> <a href="https://github.com/gohugoio/hugo/issues/4897">#4897</a></li>
+<li>nfpm replacements <a href="https://github.com/gohugoio/hugo/commit/e1a052ecb823c688406a8af97dfaaf52a75231da">e1a052ec</a> <a href="https://github.com/caarlos0">@caarlos0</a></li>
+<li>Fix typos <a href="https://github.com/gohugoio/hugo/commit/3cea2932e17a08ebc19cd05f3079d9379bc8fba5">3cea2932</a> <a href="https://github.com/idealhack">@idealhack</a></li>
+</ul>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "homepage-ppcviu4xkd" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+      </div>
+
+      
+  <footer class="footer">
+    <section class="container">
+      
+        <p>Neuroimage = New Know in Image.</p>
+      
+      
+        ©
+        
+          2019 -
+        
+        2021
+         Ye Wu Ph.D 
+      
+      
+         · 
+        Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+      
+      
+        
+      
+    </section>
+  </footer>
+
+
+    </main>
+
+    
+      
+        
+        <script src="/homepage/js/dark-mode.min.aee9c8a464eb7b3534c7110f7c5e169e7039e2fd92710e0626d451d6725af137.js" integrity="sha256-runIpGTrezU0xxEPfF4WnnA54v2ScQ4GJtRR1nJa8Tc="></script>
+      
+    
+
+    
+
+    
+
+    <script>
+(function(f, a, t, h, o, m){
+	a[h]=a[h]||function(){
+		(a[h].q=a[h].q||[]).push(arguments)
+	};
+	o=f.createElement('script'),
+	m=f.getElementsByTagName('script')[0];
+	o.async=1; o.src=t; o.id='fathom-script';
+	m.parentNode.insertBefore(o,m)
+})(document, window, '//analytics.example.com/tracker.js', 'fathom');
+fathom('set', 'siteId', 'ABCDE');
+fathom('trackPageview');
+</script>
+
+
+    <script async defer data-domain="example.com" src="https://analytics.example.com/js/plausible.js"></script>
+
+
+    <script data-goatcounter="https://code.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
+
+    
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js'
+        data-cf-beacon='{"token": "token"}'></script>
+
+
+
+    <script type="application/javascript">
+  var _paq = window._paq = window._paq || [];
+   
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://analytics.example.com/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', 'ABCDE']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+
+
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=gid"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'gid');
+</script>
+
+  </body>
+
+</html>
