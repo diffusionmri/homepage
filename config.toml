@@ -2,3 +2,5 @@ baseURL = "https://diffusionmri.github.io/homepage"
 languageCode = "en-us"
 title = "Ye Wu"
 theme = "leaveit"
+[params]
+ home_mode = "post" # post or other
