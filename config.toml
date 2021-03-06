@@ -11,16 +11,16 @@ pygmentsStyle = "b2"
 pygmentsCodeFences = true
 pygmentsCodeFencesGuessSyntax = true
 
-disqusShortname = "yourdiscussshortname"
+disqusShortname = "homepage-ppcviu4xkd"
 
 [params]
-    author = "John Doe"
-    description = "John Doe's personal website"
-    keywords = "blog,developer,personal"
-    info = "Full Stack DevOps and Magician"
+    author = "Ye Wu Ph.D"
+    description = "Ye Wu's personal website"
+    keywords = "science,blog,research,personal"
+    info = "Postdoctoral; Neuroscientist; Dad; Son; Husband; Traveler; Poet."
     avatarURL = "images/avatar.jpg"
-    #gravatar = "john.doe@example.com"
-    footerContent = "Enter a text here."
+    #gravatar = "amri.wuye@gmial.com"
+    footerContent = "Neuroimage = New Know in Image."
 
     dateFormat = "January 2, 2006"
 
@@ -125,22 +125,22 @@ disqusShortname = "yourdiscussshortname"
     name = "Github"
     icon = "fa fa-github"
     weight = 1
-    url = "https://github.com/johndoe/"
+    url = "https://github.com/diffusionmri/"
 [[params.social]]
     name = "Gitlab"
     icon = "fa fa-gitlab"
     weight = 2
-    url = "https://gitlab.com/johndoe/"
+    url = "https://gitlab.com/diffusionmri/"
 [[params.social]]
     name = "Twitter"
     icon = "fa fa-twitter"
     weight = 3
-    url = "https://twitter.com/johndoe/"
+    url = "https://twitter.com/wuye4567/"
 [[params.social]]
     name = "LinkedIn"
     icon = "fa fa-linkedin"
     weight = 4
-    url = "https://www.linkedin.com/in/johndoe/"
+    url = "https://www.linkedin.com/in/wuye1989/"
 [[params.social]]
     name = "Medium"
     icon = "fa fa-medium"
@@ -183,15 +183,15 @@ disqusShortname = "yourdiscussshortname"
 
 
     [languages.pt-br]
-        languageName = "Português"
-        title = "João Ninguém"
+        languageName = "Chinese"
+        title = "吴烨 Ph.D"
 
         [languages.pt-br.params]
-            author = "João Ninguém"
-            info = "Full Stack DevOps e Mágico"
-            description = "Sítio pessoal de João Ninguém"
-            keywords = "blog,desenvolvedor,pessoal"
-            footerContent = "Coloque algum texto aqui."
+            author = "吴烨"
+            info = "博士后；神经科学家；父亲；儿子；丈夫；旅行者；诗人"
+            description = "吴烨的个人网站"
+            keywords = "科学，博客，研究，个人"
+            footerContent = "Neuroimage = New Know in Image."
 
         [languages.pt-br.menu]
 
