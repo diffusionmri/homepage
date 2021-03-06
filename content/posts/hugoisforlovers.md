@@ -1,10 +1,19 @@
----
-title: Getting Started with Hugo
-cover: "/img/cover.jpg"
-tags: ["go", "golang", "hugo", "development"]
-categories: ["Uncategorized"]
-date: "2014-04-02"
----
++++
+date = "2014-04-02"
+title = "Getting Started with Hugo"
+tags = [
+    "go",
+    "golang",
+    "hugo",
+    "development",
+]
+categories = [
+    "Development",
+    "golang",
+]
+series = ["Getting Started", "Hugo"]
+featuredImage = "https://imgs.xkcd.com/comics/angular_momentum.jpg"
++++
 
 ## Step 1. Install Hugo
 

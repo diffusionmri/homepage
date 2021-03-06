@@ -1,70 +1,216 @@
 baseURL = "https://diffusionmri.github.io/homepage"
 languageCode = "en-us"
 title = "Ye Wu"
-theme = "leaveit"
+theme = "coder"
 
-paginate = 12
-enableEmoji = true
-enableRobotsTXT = true
-googleAnalytics = ""
+defaultContentLanguage = "en"
 
-preserveTaxonomyNames = true
+paginate = 20
 
-[blackfriday]
-  hrefTargetBlank = true
-  nofollowLinks = true
-  noreferrerLinks = true
+pygmentsStyle = "b2"
+pygmentsCodeFences = true
+pygmentsCodeFencesGuessSyntax = true
 
-[Permalinks]
- posts = "/:year/:filename/"
-
-[menu]
-  [[menu.main]]
-    name = "Blog"
-    url = "/posts/"
-    weight = 1
-
-  [[menu.main]]
-    name = "Categories"
-    url = "/categories/"
-    weight = 2
-
-  [[menu.main]]
-    name = "Tags"
-    url = "/tags/"
-    weight = 3
-
-  [[menu.main]]
-    name = "About"
-    url = "/about/"
-    weight = 4
+disqusShortname = "yourdiscussshortname"
 
 [params]
-    since = 2011
-    author = "Covey.Liu"                           # Author's name
-    avatar = "/images/me/avatar.jpeg"           # Author's avatar
-    subtitle = "我会更好，因为我没有停止"         # Subtitle
-    cdn_url = ""           # Base CDN URL
-    home_mode = "" # post or other
+    author = "John Doe"
+    description = "John Doe's personal website"
+    keywords = "blog,developer,personal"
+    info = "Full Stack DevOps and Magician"
+    avatarURL = "images/avatar.jpg"
+    #gravatar = "john.doe@example.com"
+    footerContent = "Enter a text here."
 
-    google_verification = ""
-   
-    description = "" # site description
-    keywords = "" # site keywords
+    dateFormat = "January 2, 2006"
 
-    beian = ""
-    baiduAnalytics = ""
+    hideFooter = false
+    hideCredits = false
+    hideCopyright = false
+    since = 2019
 
-    license= '本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可'
+    # Git Commit in Footer, uncomment the line below to enable it.
+    commit = "https://github.com/luizdepra/hugo-coder/tree/"
 
-[params.social]
-    GitHub = "xxoo"
-    Twitter = "xxoo"
-    Email   = "xxoo"
-    Instagram = "xxoo"
-    Wechat = "/images/me/wechat.png"  # Wechat QRcode image
-    Facebook = "xxoo"
-    Telegram = "xxoo"
-    Dribbble = "xxoo"
-    Medium = "xxoo"
+    rtl = false
 
+    # Specify light/dark colorscheme
+    # Supported values:
+    # "auto" (use preference set by browser)
+    # "dark" (dark background, light foreground)
+    # "light" (light background, dark foreground) (default)
+    colorScheme = "auto"
+
+    # Hide the toggle button, along with the associated vertical divider
+    hideColorSchemeToggle = false
+
+    # Series see also post count
+    maxSeeAlsoItems = 5
+
+    # Enable Twemoji
+    enableTwemoji = true
+
+    # Custom CSS
+    customCSS = []
+
+    # Custom SCSS
+    customSCSS = []
+
+    # Custom JS
+    customJS = []
+
+# If you want to use fathom(https://usefathom.com) for analytics, add this section
+[params.fathomAnalytics]
+    siteID = "ABCDE"
+    # Default value is cdn.usefathom.com, overwrite this if you are self-hosting
+    serverURL = "analytics.example.com"
+
+# If you want to use plausible(https://plausible.io) for analytics, add this section
+[params.plausibleAnalytics]
+    domain = "example.com"
+    # Default value is plausible.io, overwrite this if you are self-hosting or using a custom domain
+    serverURL = "analytics.example.com"
+
+# If you want to use goatcounter(https://goatcounter.com) for analytics, add this section
+[params.goatCounter]
+    code = "code"
+
+# If you want to use Cloudflare Web Analytics(https://cloudflare.com) for analytics, add this section
+[params.cloudflare]
+    token = "token"
+
+# If you want to use Matomo(https://matomo.org) for analytics, add this section
+[params.matomo]
+    # Default value is "1", overwrite this if you are cloud-hosting
+    siteID = "ABCDE"
+    # For cloud-hosting, use provided URL, e.g. example.matomo.cloud
+    serverURL = "analytics.example.com"
+
+# If you want to use Google Tag Manager(https://analytics.google.com/) for analytics, add this section
+[params.googleTagManager]
+    id = "gid"
+
+# If you want to implement a Content-Security-Policy, add this section
+[params.csp]
+	  childsrc = ["'self'"]
+	  fontsrc = [
+        "'self'",
+		    "https://fonts.gstatic.com",
+		    "https://cdn.jsdelivr.net/"
+    ]
+	  formaction = ["'self'"]
+	  framesrc = ["'self'"]
+	  imgsrc = ["'self'"]
+	  objectsrc = ["'none'"]
+	  stylesrc = [
+        "'self'",
+		    "'unsafe-inline'",
+		    "https://fonts.googleapis.com/",
+		    "https://cdn.jsdelivr.net/"
+    ]
+	  scriptsrc = [
+        "'self'",
+		    "'unsafe-inline'",
+		    "https://www.google-analytics.com"
+    ]
+	  prefetchsrc = ["'self'"]
+
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
+  author = "authors"
+
+[[params.social]]
+    name = "Github"
+    icon = "fa fa-github"
+    weight = 1
+    url = "https://github.com/johndoe/"
+[[params.social]]
+    name = "Gitlab"
+    icon = "fa fa-gitlab"
+    weight = 2
+    url = "https://gitlab.com/johndoe/"
+[[params.social]]
+    name = "Twitter"
+    icon = "fa fa-twitter"
+    weight = 3
+    url = "https://twitter.com/johndoe/"
+[[params.social]]
+    name = "LinkedIn"
+    icon = "fa fa-linkedin"
+    weight = 4
+    url = "https://www.linkedin.com/in/johndoe/"
+[[params.social]]
+    name = "Medium"
+    icon = "fa fa-medium"
+    weight = 5
+    url = "https://medium.com/@johndoe"
+[[params.social]]
+    name = "RSS"
+    icon = "fa fa-rss"
+    weight = 6
+    url = "https://myhugosite.com/index.xml"
+    rel = "alternate"
+    type = "application/rss+xml"
+
+
+[languages]
+    [languages.en]
+        languageName = "English"
+
+        [languages.en.menu]
+
+            [[languages.en.menu.main]]
+            name = "About"
+            weight = 1
+            url = "about/"
+
+            [[languages.en.menu.main]]
+            name = "Blog"
+            weight = 2
+            url = "posts/"
+
+            [[languages.en.menu.main]]
+            name = "Projects"
+            weight = 3
+            url = "projects/"
+
+            [[languages.en.menu.main]]
+            name = "Contact me"
+            weight = 5
+            url = "contact/"
+
+
+    [languages.pt-br]
+        languageName = "Português"
+        title = "João Ninguém"
+
+        [languages.pt-br.params]
+            author = "João Ninguém"
+            info = "Full Stack DevOps e Mágico"
+            description = "Sítio pessoal de João Ninguém"
+            keywords = "blog,desenvolvedor,pessoal"
+            footerContent = "Coloque algum texto aqui."
+
+        [languages.pt-br.menu]
+
+            [[languages.pt-br.menu.main]]
+            name = "Sobre"
+            weight = 1
+            url = "about/"
+
+            [[languages.pt-br.menu.main]]
+            name = "Blog"
+            weight = 2
+            url = "posts/"
+
+            [[languages.pt-br.menu.main]]
+            name = "Projetos"
+            weight = 3
+            url = "projects/"
+
+            [[languages.pt-br.menu.main]]
+            name = "Contato"
+            weight = 5
+            url = "contact/"
