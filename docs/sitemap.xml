@@ -1,72 +1,16 @@
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
-    <url>
-      <loc>https://diffusionmri.github.io/homepage/posts/my-first-post/</loc>
-      
+  <sitemap>
+    <loc>https://diffusionmri.github.io/homepage/en/sitemap.xml</loc>
+    
       <lastmod>2021-03-05T23:47:59-05:00</lastmod>
-      
-      
-      
-      
-    </url>
+    
+  </sitemap>
   
-    <url>
-      <loc>https://diffusionmri.github.io/homepage/posts/</loc>
-      
-      <lastmod>2021-03-05T23:47:59-05:00</lastmod>
-      
-      
-      
-      
-    </url>
+  <sitemap>
+    <loc>https://diffusionmri.github.io/homepage/pt-br/sitemap.xml</loc>
+    
+  </sitemap>
   
-    <url>
-      <loc>https://diffusionmri.github.io/homepage/</loc>
-      
-      <lastmod>2021-03-05T23:47:59-05:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://diffusionmri.github.io/homepage/categories/</loc>
-      
-      <lastmod>2018-08-29T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://diffusionmri.github.io/homepage/categories/releases/</loc>
-      
-      <lastmod>2018-08-29T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://diffusionmri.github.io/homepage/posts/two/</loc>
-      
-      <lastmod>2018-08-29T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://diffusionmri.github.io/homepage/tags/</loc>
-      
-      
-      
-      
-    </url>
-  
-</urlset>
+</sitemapindex>

@@ -1,19 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ye Wu on Ye Wu</title>
+    <title>Ye Wu</title>
     <link>https://diffusionmri.github.io/homepage/</link>
-    <description>Recent content in Ye Wu on Ye Wu</description>
+    <description>Recent content on Ye Wu</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 05 Mar 2021 23:47:59 -0500</lastBuildDate>
-    <atom:link href="/homepage/" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Fri, 05 Mar 2021 23:47:59 -0500</lastBuildDate><atom:link href="https://diffusionmri.github.io/homepage/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Posts</title>
-      <link>https://diffusionmri.github.io/homepage/posts/</link>
+      <title>My First Post</title>
+      <link>https://diffusionmri.github.io/homepage/posts/my-first-post/</link>
       <pubDate>Fri, 05 Mar 2021 23:47:59 -0500</pubDate>
       
-      <guid>https://diffusionmri.github.io/homepage/posts/</guid>
+      <guid>https://diffusionmri.github.io/homepage/posts/my-first-post/</guid>
+      <description>my first page</description>
+    </item>
+    
+    <item>
+      <title>This One Goes to 11!</title>
+      <link>https://diffusionmri.github.io/homepage/posts/two/</link>
+      <pubDate>Wed, 29 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://diffusionmri.github.io/homepage/posts/two/</guid>
       <description></description>
     </item>
     
